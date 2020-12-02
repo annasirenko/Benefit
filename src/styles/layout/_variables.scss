@@ -1,0 +1,46 @@
+$pink:#F94877;
+$red: #F44336;
+$icons:#FC104F;
+$dark:#222222;
+$dark-grey: #828282;
+$light-grey:#A0A0A0;
+
+//  fonts
+$bebas: 'Bebas Neue',
+Helvetica,
+sans-serif;
+$verdana: 'Verdana',
+Helvetica,
+sans-serif;
+
+
+// @function rem($px){
+//   @return $px / 16px + 0rem;
+// }
+
+@mixin button {
+  border: 1px solid $pink;
+  background-color: transparent;
+  color: $dark;
+  font-weight: bold;
+  padding: 1.3rem 3.3rem 1.3rem 3.3rem;
+  transition: all .3s ease-in-out;
+}
+
+@mixin container {
+  width: 90%;
+  margin: auto;
+  max-width: 16rem;
+}
+
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
