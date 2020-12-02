@@ -1,0 +1,23 @@
+.menu{
+    font-family: "BebasNeue", sans-serif;
+    min-height: 6rem;
+    padding: 1.5rem 2rem 0 2rem;
+    &_list{        
+    border-bottom: 2px solid #C4C4C4;
+    border-top: 1px solid $dark;
+    width: 100%;
+    position: relative;    
+    display: flex;    
+    justify-content: space-between;
+    padding: 1.2rem 0 1.2rem;
+    
+
+    }
+    &_list{
+        &--link{
+            &:hover{
+                color: $dark-grey;
+            }
+        }
+    }
+}

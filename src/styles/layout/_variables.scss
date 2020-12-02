@@ -33,6 +33,17 @@ sans-serif;
   max-width: 16rem;
 }
 
+@mixin desktopHd(){
+  @media screen and (max-width: 2560px) {
+    @content;
+  }
+}  
+
+@mixin desktop(){
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
 @mixin tablets() {
   @media screen and (max-width: 768px) {
     @content;
