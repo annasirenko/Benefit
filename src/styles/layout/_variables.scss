@@ -44,6 +44,12 @@ sans-serif;
     @content;
   }
 }
+
+// @mixin sm-laptop{
+//   @media screen and (max-width: 1024px) {
+//     @content;
+//   }
+// }
 @mixin tablets() {
   @media screen and (max-width: 768px) {
     @content;
