@@ -1,0 +1,46 @@
+.brands {
+  padding: 2rem 2rem 4rem 2rem;
+  width: 95%;
+  margin: auto;
+  border-bottom: 1px solid $dark;
+
+  &_content {
+    background: #ffffff;
+    padding: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    position: relative;
+    &--block {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 auto;
+      max-width: 160rem;
+    }
+
+    &--title {
+      font-size: 2rem;
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+
+    &--list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 160rem;
+      margin: auto;
+      position: relative;
+      border-top: 1px solid #828282;
+      padding-top: 3rem;
+      @include tabletsPro {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+      }
+    }
+    &--link {
+      & img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

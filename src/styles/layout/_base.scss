@@ -78,19 +78,19 @@ button {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: $bg;
   display: flex;
   flex-direction: column;
 }
   
 
-main {
-  min-height: 100%;
-  min-width: 32rem;
-  // @include container;
+// main {
+//   min-height: 100%;
+//   min-width: 32rem;
+//   // @include container;
   
   
-}
+// }
 
 // .section {
 //   // height: 100vh;
@@ -157,3 +157,64 @@ img {
 //         height: 100vh;
 //     }
 // }
+
+
+.contact {
+  & a {
+    font-size: 1.8rem;
+    color: $dark;
+  }
+
+  & .schedule {
+    font-size: 1.2rem;
+    color: $dark-grey;
+    margin-top: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  height: 7.2rem;
+  width: 26.2rem;
+  position: relative;
+  background: url("./img/icons/logo.svg") center center / contain no-repeat;
+  @include tabletsPro{
+    width: 17.8rem;
+    height: 4.6rem;
+  }
+  @include phones{
+    width: 12.7rem;
+    height: 3.5rem;
+  }
+}
+
+.button-up{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid $dark-grey;
+  margin: auto;
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+  z-index: 2;
+  @include tabletsPro{
+    display: none;
+  }
+  
+  &::after{
+    content: '';
+    background: url('./img/icons/up-arrow.svg') no-repeat center center;
+    width: 2rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+

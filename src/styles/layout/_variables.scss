@@ -4,6 +4,7 @@ $icons:#FC104F;
 $dark:#222222;
 $dark-grey: #828282;
 $light-grey:#A0A0A0;
+$bg:#F9F9F9;
 
 //  fonts
 $bebas: 'Bebas Neue',
@@ -45,11 +46,11 @@ sans-serif;
   }
 }
 
-// @mixin sm-laptop{
-//   @media screen and (max-width: 1024px) {
-//     @content;
-//   }
-// }
+@mixin tabletsPro() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
 @mixin tablets() {
   @media screen and (max-width: 768px) {
     @content;
