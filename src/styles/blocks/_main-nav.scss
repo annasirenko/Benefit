@@ -47,7 +47,9 @@
   }
   &_list {
     &-open{
-      transform: translateX(100%);
+      @include tabletsPro{
+        transform: translateX(100%);
+      }
     }
     &--link {
       outline: none;

@@ -40,13 +40,13 @@
       max-width: 160rem;
       margin: auto;
 
-      @include tabletsPro {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @include phones {
-        grid-template-columns: repeat(1, 1fr);
-      }
+      // @include tabletsPro {
+      //   display: grid;
+      //   grid-template-columns: repeat(2, 1fr);
+      // }
+      // @include phones {
+      //   grid-template-columns: repeat(1, 1fr);
+      // }
     }
 
     &--item {
@@ -186,6 +186,7 @@
       background-color: transparent;
       cursor: pointer;
       position: absolute;
+      outline: none;
       top: 45%;
       // left: 0;
 
@@ -199,9 +200,9 @@
       @include desktop {
         left: 3.3rem;
       }
-      @include tabletsPro {
-        display: none;
-      }
+      // @include tabletsPro {
+      //   display: none;
+      // }
     }
 
     &-arrow-next {
@@ -209,6 +210,7 @@
       background-color: transparent;
       background-color: transparent;
       cursor: pointer;
+      outline: none;
       position: absolute;
       top: 45%;
       right: 2.9rem;
@@ -223,9 +225,9 @@
       @include desktop {
         right: 3.3rem;
       }
-      @include tabletsPro {
-        display: none;
-      }
+      // @include tabletsPro {
+      //   display: none;
+      // }
     }
   }
 }

@@ -63,6 +63,7 @@
   cursor: pointer;
   position: absolute;
   top: 45%;
+  outline: none;
 
   @include desktopHd {
     left: 40rem;
@@ -83,6 +84,7 @@
   position: absolute;
   top: 45%;
   right: 2.9rem;
+  outline: none;
 
   @include desktopHd {
     right: 40rem;

@@ -43,8 +43,8 @@ const next = () => {
 
   window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
-      slidesToScroll: 0,
-  slidesToShow: 0,
+      slidesToScroll: 1,
+  slidesToShow: 1,
   draggable: false,
   dots: 'false',
   rewind: 'true',
@@ -58,8 +58,8 @@ const next = () => {
        breakpoint: 768,
        settings: {
          // Set to `auto` and provide item width to adjust to viewport
-         slidesToShow: '0',
-         slidesToScroll: '0',
+         slidesToShow: '2',
+         slidesToScroll: '1',
         
       }
     },
@@ -68,8 +68,8 @@ const next = () => {
       breakpoint: 1024,
       settings: {
         // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: '0',
-        slidesToScroll: '0',
+        slidesToShow: '2',
+        slidesToScroll: '1',
         
       }
     },
