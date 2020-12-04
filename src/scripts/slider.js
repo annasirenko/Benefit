@@ -41,4 +41,58 @@ const next = () => {
 
   //Слайдер для продукции
 
+  window.addEventListener('load', function(){
+    new Glider(document.querySelector('.glider'), {
+      slidesToScroll: 0,
+  slidesToShow: 0,
+  draggable: false,
+  dots: 'false',
+  rewind: 'true',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+  responsive: [
+    {
+       // screens greater than >= 775px
+       breakpoint: 768,
+       settings: {
+         // Set to `auto` and provide item width to adjust to viewport
+         slidesToShow: '0',
+         slidesToScroll: '0',
+        
+      }
+    },
+    {
+      // screens greater than >= 775px
+      breakpoint: 1024,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: '0',
+        slidesToScroll: '0',
+        
+      }
+    },
+    {
+      // screens greater than >= 775px
+      breakpoint: 1440,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: '4',
+        slidesToScroll: '1',
+        
+        
+      }
+      
+    },
+    
+    // destroy(),
+  ]
+})
+
+// document.querySelector('.glider').addEventListener('glider-destroy', function(event){
+//   // after destroy
+// });
+  
+  })
   

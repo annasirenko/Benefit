@@ -2,12 +2,23 @@
   padding: 2rem 2rem 0 2rem;
   width: 95%;
   margin: auto;
+  @include tabletsPro{
+    padding: 0;
+    width: 100%;
+  }
+  @include phones{
+    display: none;
+  }
 
   &_content {
     background: #ffffff;
     padding: 3rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     position: relative;
+    @include tabletsPro{
+      padding: 3rem 0;
+      
+    }
   }
 
   &_slider {
@@ -22,6 +33,9 @@
       & .banner_slider--item {
         display: none;
         width: 100%;
+        &:nth-child(4){
+          display: none;
+        }
 
         & .fade {
           animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -40,6 +54,7 @@
         right: 0.2rem;
       }
     }
+    
   }
 }
 
@@ -51,6 +66,9 @@
 
   @include desktopHd {
     left: 40rem;
+  }
+  @include desktopLg{
+    left: 9rem;
   }
   @include desktop {
     left: 3.3rem;
@@ -68,6 +86,9 @@
 
   @include desktopHd {
     right: 40rem;
+  }
+  @include desktopLg{
+    right: 9rem;
   }
   @include desktop {
     right: 3.3rem;

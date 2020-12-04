@@ -3,6 +3,10 @@
   width: 95%;
   margin: auto;
   border-bottom: 1px solid $dark;
+  @include tabletsPro{
+    padding: 2rem 0 2rem 0;
+  width: 100%;
+  }
 
   &_content {
     background: #ffffff;
@@ -34,6 +38,11 @@
       @include tabletsPro {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+      }
+      @include phones{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 5rem;
       }
     }

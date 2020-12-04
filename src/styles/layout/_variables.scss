@@ -40,6 +40,12 @@ sans-serif;
   }
 }  
 
+@mixin desktopLg(){
+  @media screen and (max-width: 1980px) {
+    @content;
+  }
+}
+
 @mixin desktop(){
   @media screen and (max-width: 1800px) {
     @content;
