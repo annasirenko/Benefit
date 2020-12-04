@@ -2,11 +2,11 @@
   font-family: "BebasNeue", sans-serif;
   min-height: 6rem;
   padding: 1.5rem 2rem 0 2rem;
-  @include tabletsPro{
+  @include tabletsPro {
     padding: 0;
     min-height: 0;
   }
- 
+
   &_list {
     border-bottom: 2px solid #c4c4c4;
     border-top: 1px solid $dark;
@@ -16,38 +16,27 @@
     justify-content: space-between;
     padding: 1.2rem 0 1.2rem;
     @include tabletsPro {
-    //   background: #414141;
-    // width: 100%;
-    // height: 100%;
-    // position: fixed;
-    // top: 0;
-    // right: 100%;
-    // flex-direction: column;
-    // align-items: center;
-    // padding: 0;
-    // border-top: 0;
-    // border-bottom: 0;
-    position: fixed;
-  width: 50%;
-  height: 100vh;
-  background-color:  #fff;;
-  color: #fff;  
-  top: 0;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  right: 100%;
-  border-right: 1px solid $dark;
+      position: fixed;
+      width: 50%;
+      height: 100vh;
+      background-color: #fff;
+      color: #fff;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      right: 100%;
+      border-right: 1px solid $dark;
     }
-    @include phones{
+    @include phones {
       width: 100%;
     }
   }
   &_list {
-    &-open{
-      @include tabletsPro{
+    &-open {
+      @include tabletsPro {
         transform: translateX(100%);
       }
     }
@@ -61,14 +50,14 @@
   }
 }
 
-.burger{
+.burger {
   display: none;
-  @include tabletsPro{
+  @include tabletsPro {
     order: 1;
     position: relative;
     display: block;
     cursor: pointer;
-    & span{
+    & span {
       padding: 0.2rem 2rem;
       background: $dark;
       margin: 0.7rem 0rem;
@@ -77,12 +66,9 @@
   }
 }
 
-
-
-
-.close-btn{
+.close-btn {
   display: none;
-  @include tabletsPro{
+  @include tabletsPro {
     position: fixed;
     top: 3rem;
     left: -5rem;
@@ -93,12 +79,11 @@
     width: 3rem;
     height: 3rem;
     z-index: 4;
-    &--close{
-     left: 44rem;
-     @include tablets{
-       left: 33rem;
-     }
+    &--close {
+      left: 44rem;
+      @include tablets {
+        left: 33rem;
+      }
     }
-    
   }
 }

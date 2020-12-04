@@ -19,7 +19,7 @@
         @include desktopHd {
           left: 28rem;
         }
-        @include desktopLg{
+        @include desktopLg {
           left: -4rem;
         }
         @include desktop {
@@ -58,16 +58,16 @@
       }
     }
   }
-  &_contact{
-    @include tabletsPro{
+  &_contact {
+    @include tabletsPro {
       display: flex;
       flex-direction: column;
       order: 3;
-      padding-top: .7em;
+      padding-top: 0.7em;
       flex: 2;
       // margin-left: 6rem;
     }
-    @include phones{
+    @include phones {
       display: none;
     }
   }
@@ -75,7 +75,7 @@
   &_bottom {
     min-height: 9rem;
     padding: 1.5rem 2rem 0 2rem;
-    @include tabletsPro{
+    @include tabletsPro {
       min-height: 6rem;
       padding: 1.5rem 2rem;
       border-bottom: 1px solid $dark;
@@ -84,49 +84,45 @@
       & a {
         font-size: 1.8rem;
         color: $dark;
-        @include tabletsPro{
+        @include tabletsPro {
           font-size: 1.4rem;
         }
       }
-    
+
       &-schedule {
         font-size: 1.2rem;
         color: $dark-grey;
         margin-top: 1.5rem;
         line-height: 1.2;
-        @include tabletsPro{
+        @include tabletsPro {
           display: none;
         }
       }
     }
-    
 
     &--button {
       font-size: 1.4rem;
       padding-top: 2rem;
       margin-left: 10rem;
       transition: all 0.3s ease-in-out;
-      @include tabletsPro{
+      @include tabletsPro {
         display: none;
       }
 
       &:hover {
         color: $pink;
-       
       }
-      &-tablets{
+      &-tablets {
         display: none;
-        @include tabletsPro{
-        display: block;
+        @include tabletsPro {
+          display: block;
           margin-left: 0;
-        font-size: 1.2rem;
-        padding-top: 1rem;
-        &:hover {
-          color: $pink;
-         
+          font-size: 1.2rem;
+          padding-top: 1rem;
+          &:hover {
+            color: $pink;
+          }
         }
-        }
-
       }
     }
 
@@ -137,19 +133,16 @@
       width: 40%;
       position: relative;
       background: url("./img/icons/logo.svg") center center / contain no-repeat;
-      @include tabletsPro{
+      @include tabletsPro {
         margin: 0;
         order: 2;
-        
       }
-      
-      
     }
 
     &--features {
       display: flex;
       align-items: center;
-      @include tabletsPro{
+      @include tabletsPro {
         order: 4;
       }
 
@@ -343,9 +336,7 @@
   align-items: center;
   width: 4.4rem;
   height: 4.4rem;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border-radius: 50%;
   margin: 0 auto;
 }
-
-

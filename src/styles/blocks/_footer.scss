@@ -11,7 +11,7 @@
     width: 90%;
     margin: 0 auto;
     max-width: 160rem;
-    @include phones{
+    @include phones {
       max-width: 30rem;
     }
   }
@@ -23,13 +23,12 @@
     @include tabletsPro {
       flex-wrap: wrap;
     }
-    @include phones{
+    @include phones {
       flex-direction: column;
     }
   }
   &_column {
-    @include phones{
-      
+    @include phones {
     }
     &:first-child {
       padding-right: 5rem;
@@ -37,7 +36,7 @@
         padding-right: 3rem;
         order: 1;
       }
-      @include phones{
+      @include phones {
         display: none;
       }
     }
@@ -47,7 +46,7 @@
         padding-right: 2rem;
         order: 2;
       }
-      @include phones{
+      @include phones {
         display: none;
       }
     }
@@ -58,7 +57,7 @@
         order: 3;
         padding-right: 3rem;
       }
-      @include phones{
+      @include phones {
         display: none;
       }
     }
@@ -69,7 +68,7 @@
         margin: 0;
         margin-top: 3rem;
       }
-      @include phones{
+      @include phones {
         margin: 0 auto;
         margin-top: 3rem;
       }
@@ -87,16 +86,14 @@
         padding-right: 0;
       }
     }
-    &:nth-child(6){
+    &:nth-child(6) {
       text-align: center;
       order: 2;
-      
     }
-    &:nth-child(7){
-      text-align: center;      
+    &:nth-child(7) {
+      text-align: center;
       order: 1;
       margin-bottom: 1rem;
-      
     }
     & ul li {
       margin-bottom: 1rem;
@@ -107,16 +104,16 @@
     &--title {
       color: $dark-grey;
       margin-bottom: 1.4rem;
-      @include phones{
+      @include phones {
         text-align: center;
-        & span{
+        & span {
           display: none;
         }
       }
     }
     &--icons {
       display: flex;
-      @include phones{
+      @include phones {
         justify-content: center;
       }
       & img {
@@ -124,7 +121,7 @@
         height: 3.7rem;
         &:first-child {
           margin-right: 5.2rem;
-          @include phones{
+          @include phones {
             margin-right: 3.2rem;
           }
         }
@@ -134,7 +131,7 @@
       @include tabletsPro {
         max-width: 16.8rem;
       }
-      @include phones{
+      @include phones {
         max-width: 100%;
         margin-top: 4rem;
       }
@@ -154,7 +151,7 @@
   }
   &_button {
     margin-top: 3.8rem;
-    @include phones{
+    @include phones {
       text-align: center;
     }
     & a {
@@ -181,18 +178,19 @@
     width: 26.2rem;
     position: relative;
     background: url("./img/icons/logo.svg") center center / contain no-repeat;
-    @include phones{
+    @include phones {
       display: none;
     }
-    &--visible{
+    &--visible {
       display: none;
-      @include phones{
+      @include phones {
         display: block;
         margin: 0 auto;
         height: 6.2rem;
-    width: 17.2rem;
-    position: relative;
-    background: url("./img/icons/logo.svg") center center / contain no-repeat;
+        width: 17.2rem;
+        position: relative;
+        background: url("./img/icons/logo.svg") center center / contain
+          no-repeat;
       }
     }
   }
@@ -203,37 +201,35 @@
     & a {
       color: $pink;
     }
-    @include phones{
+    @include phones {
       text-align: center;
     }
   }
 }
 
-.contact{
+.contact {
   text-align: center;
 }
 
-.page_links{
+.page_links {
   display: none;
-  @include phones{
+  @include phones {
     display: block;
-    & a span{
-      font-family: 'BebasNeue', sans-serif;
+    & a span {
+      font-family: "BebasNeue", sans-serif;
       font-size: 2.4rem;
       position: relative;
-      &:after{
-        content: '';
+      &:after {
+        content: "";
         display: block;
         position: absolute;
-        background: url('./img/icons/pink_arrow.svg') no-repeat center center;
+        background: url("./img/icons/pink_arrow.svg") no-repeat center center;
         background-size: contain;
         height: 1.6rem;
-        width: .8rem;
-        top: .4rem;
+        width: 0.8rem;
+        top: 0.4rem;
         right: -2rem;
       }
     }
-
   }
-  
 }
