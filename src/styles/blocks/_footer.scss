@@ -131,6 +131,11 @@
       @include tabletsPro {
         max-width: 16.8rem;
       }
+      @include tablets{
+        max-width: 19.8rem;
+      }
+
+
       @include phones {
         max-width: 100%;
         margin-top: 4rem;
@@ -208,7 +213,9 @@
 }
 
 .contact {
-  text-align: center;
+  @include phones{
+    text-align: center;
+  }
 }
 
 .page_links {
