@@ -1,5 +1,5 @@
 .footer {
-  height: 34.7rem;
+  // min-height: 34.7rem;
   background-color: #fff;
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -146,6 +146,7 @@
   &_menu {
     &--list {
       font-family: "BebasNeue", sans-serif;
+      font-size: 1.8rem;
 
       & a {
         &:hover {
@@ -169,6 +170,7 @@
   }
 
   &_features {
+    font-size: 1.4rem;
     color: $dark;
     & a:hover {
       color: $dark-grey;
@@ -183,6 +185,7 @@
     width: 26.2rem;
     position: relative;
     background: url("./img/icons/logo.svg") center center / contain no-repeat;
+    cursor: pointer;
     @include phones {
       display: none;
     }

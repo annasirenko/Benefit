@@ -10,10 +10,8 @@
   &_content {
     background: #ffffff;
     padding: 3rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     position: relative;
-
-    border: 1px solid #000;
+   
 
     &--block {
       display: flex;
@@ -97,6 +95,9 @@
       &:nth-child(2n) .popular_slider--link .popular_slider--info {
         padding-bottom: 4.9rem;
       }
+      &:nth-child(1) .popular_slider--link .popular_slider--info {
+        padding-bottom: 4.8rem;
+      }
 
       &:hover,
       &:focus {
@@ -130,7 +131,8 @@
         max-width: 253px;
         height: 270px;
         padding: 0 20px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         margin: 0 auto;
       }
     }
