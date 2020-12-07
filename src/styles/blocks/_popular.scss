@@ -94,6 +94,9 @@
 
       &:nth-child(2n) .popular_slider--link .popular_slider--info {
         padding-bottom: 4.9rem;
+        @include tablets{
+          padding-bottom: 6.5rem;
+        }
       }
       &:nth-child(1) .popular_slider--link .popular_slider--info {
         padding-bottom: 4.8rem;
@@ -140,6 +143,9 @@
     &--info {
       margin-top: 2rem;
       padding-bottom: 3rem;
+      @include tablets{
+        padding-bottom: 4.5rem;
+      }
     }
 
     &--payment {
