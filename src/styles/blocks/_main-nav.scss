@@ -29,6 +29,7 @@
       justify-content: space-around;
       flex-direction: column;
       right: 100%;
+      border-top: 0;
       border-right: 1px solid $dark;
     }
     @include phones {

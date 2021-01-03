@@ -41,7 +41,8 @@ const next = () => {
 
   //Слайдер для продукции
 
-  window.addEventListener('load', function(){
+  window.addEventListener('load', function(e){
+    e.preventDefault();
     new Glider(document.querySelector('.glider'), {
       slidesToScroll: 1,
   slidesToShow: 1,
