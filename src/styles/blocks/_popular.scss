@@ -30,7 +30,8 @@
 
   &_slider {
     &--list {
-      overflow: hidden;
+      // overflow: hidden;
+      animation: slider-opening 4s ease-in-out;
       border-top: 1px solid $dark-grey;
       padding-top: 3rem;
       display: flex;
@@ -240,5 +241,15 @@
       //   display: none;
       // }
     }
+  }
+}
+
+
+@keyframes slider-opening{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
