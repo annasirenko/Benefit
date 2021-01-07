@@ -6,22 +6,19 @@ const links = nav.querySelectorAll("a");
 const close = document.querySelector(".close-btn");
 
 burger.addEventListener("click", () => {
-  nav.classList.toggle("menu_list-open");
-  // burger.classList.toggle("toggle");
+  nav.classList.toggle("menu_list-open"); 
   close.classList.toggle("close-btn--close");
 });
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    nav.classList.toggle("menu_list-open");
-    // burger.classList.toggle("toggle");
+    nav.classList.toggle("menu_list-open");    
     close.classList.toggle("close-btn--close");
   });
 });
 
 close.addEventListener("click", () => {
-    nav.classList.toggle("menu_list-open");
-    // burger.classList.toggle("toggle");
+    nav.classList.toggle("menu_list-open");   
     close.classList.toggle("close-btn--close");
   });
 
